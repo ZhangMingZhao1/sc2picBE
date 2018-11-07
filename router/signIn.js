@@ -34,7 +34,10 @@ router.post('/',function(req,res) {
             console.log(1,req.sessionID)
             // console.log(req.session);
             if (password == result[0].password) {
-                res.send("1"); //登陆成功
+                res.json({
+                    username:username,
+                    status:1
+                }); //登陆成功
                 return;
             } else {
                 res.send("-2"); //密码错误
