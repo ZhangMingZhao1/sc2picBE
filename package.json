@@ -26,6 +26,7 @@
     "mongodb": "^3.1.1",
     "mongolass": "^4.3.4",
     "qiniu": "^7.2.1",
-    "silly-datetime": "^0.1.2"
+    "silly-datetime": "^0.1.2",
+    "connect-flash": "0.1.1"
   }
 }

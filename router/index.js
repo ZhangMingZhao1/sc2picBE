@@ -3,6 +3,8 @@ module.exports = function (app) {
         res.redirect('/getPic')
     });
     app.use('/getPic', require('./getPic'));
+    app.use('/signUp', require('./signUp'));
+    app.use('/signIn', require('./signIn'));
 
     // 404 page
     app.use(function (req, res) {
